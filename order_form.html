@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestilling</title>
+    <link rel="stylesheet" type="text/css" href="css/order_style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/master.css"> -->
+    <!-- JQUERYS  -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../javascript/menu.js"></script>
+
+  </head>
+  <body>
+    <div class="grid-wrapper">
+      <!-- RESPONSIVE HEADER AND NAVIGATION -->
+
+      <div class="wrap-header">
+        <header>
+          <img src="images/sving_logo.svg" alt="Sving Reiser" class="logo">
+          <nav class="main-nav">
+            <ul>
+              <li><a href="index.html">Hjem</a></li>
+              <li><a href="order_form.html">Bestill</a></li>
+              <li><a href="dest_barcelona.html">Destinasjoner</a></li>
+              <li><a href="#">Nyheter</a></li>
+              <li><a href="#">Om</a></li>
+              <li><a href="#">Kontakt</a></li>
+            </ul>
+          </nav>
+          <div class="nav-toggle">
+            <div class="hamburger"></div>
+          </div>
+        </header>
+      </div>
+
+
+<div class="order">
+    <h2>Bestilling</h2>
+
+        <form name="skjema" action="" method="post"  id="bestilling" onsubmit="return validerskjema ();">
+
+          <div class="names">
+            Fornavn:<br>
+            <input type="text" name="fornavn" required><br>
+            Etternavn:<br>
+            <input type="text" name="etternavn" required><br>
+          </div>
+          <div class="travelers">
+          Hvor mange reisende er dere?:<br>
+          <input type="number" name="reisende" min="1" max="50" value="" required><br>
+          </div>
+          Ønsket destinasjon<br>
+          <input type="radio" name="destinasjon" value="Sveits" > Sveits<br>
+          <input type="radio" name="destinasjon" value="Thailand" > Thailand<br>
+          <input type="radio" name="destinasjon" value="Svalbard" > Svalbard<br>
+          Ønsket varighet på opphold<br>
+          <input type="radio" name="varighet" value="1uke" > 1 uke<br>
+          <input type="radio" name="varighet" value="2uke" > 2 uker<br>
+          <input type="radio" name="varighet" value="3uke" > 3 uker<br>
+          <input type="radio" name="varighet" value="4uke" > 4 uker<br>
+          Ønskede fasiliteter<br>
+          <input type="radio" name="TV" value="TV" > TV<br>
+          <input type="radio" name="Internett" value="Internett" > Internett<br>
+          <input type="radio" name="Pool" value="Pool" > Svømmebasseng<br>
+          Ønsker du ferdig utvasking?<br>
+          <input type="radio" name="vaske" value="Ja" checked> Ja<br>
+          <input type="radio" name="vaske" value="Nei" d> Nei<br>
+          Er du medlem i Sving sitt reiseprogram?<br>
+          <input type="radio" name="vaske" value="Ja" > Ja<br>
+          <input type="radio" name="vaske" value="Nei" > Nei<br>
+          Din epost adresse:*<br>
+          <input type="email" name="epost" placeholder="eksempel@eksempel.no" required><br>
+          Trykk her for å sende inn:<br>
+          <button class="knapp" type="submit" value="Submit" onclick="return Validate()" onclick="return medlem()">Send</button><br>
+        </form>
+        <div  class="comments">
+        <textarea name="kommentarer" rows="4" cols="" form="bestilling">Skriv kommentarer og ønsker her</textarea></div>
+      </div>
+      <div class="footer">
+        <div class="social">
+          <i class="fab fa-facebook-square fa-lg"></i>
+          <i class="fab fa-twitter-square fa-lg"></i>
+          <i class="fab fa-instagram fa-lg"></i>
+
+        </div>
+        <div class="contact">
+          <div class="contact-icons">
+            <i class="fas fa-phone fa-lg"></i>
+            <i class="far fa-envelope fa-lg"></i>
+          </div>
+          <div class="contact-left">
+            <p>333-333-333</p>
+            <p>frodo@sving.no</p>
+          </div>
+          <div class="footer-menu">
+            <ul>
+              <li><a href="index.html">Hjem</a></li>
+              <li><a href="order_form.html">Bestill</a></li>
+              <li><a href="dest_barcelona.html">Destinasjoner</a></li>
+              <li><a href="#">Nyheter</a></li>
+              <li><a href="#">Om</a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  </html>

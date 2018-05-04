@@ -1,0 +1,291 @@
+/* GLOBAL SETTINGS
+========================================================= */
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700,900");
+
+body{
+  margin: 0;
+  /* background: linear-gradient(to left,#25a79c,#88e5de); */
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  background: #E2DF9E;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.grid-wrapper {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+
+}
+/* TYPOGRAPHY AND COLOURS
+==================================================== */
+.main-nav {
+  background: #E2DF9E;
+}
+.main-nav ul li a {
+  color: #44BFB9;
+}
+
+
+
+/* GRID WRAPPER SETTINGS
+======================================================= */
+.grid-wrapper {
+  display: grid;
+  grid-template:
+  "header" 10vh
+  "order" auto
+  "footer" auto
+  / 1fr;
+
+}
+
+.wrap-header {
+  grid-area: header;
+  margin: 0;
+}
+
+.main-nav {
+  grid-area: main-nav;
+  z-index: 10;
+}
+
+.order {
+  grid-area: order;
+
+}
+.footer {
+  grid-area: footer;
+}
+
+
+
+/* FORM
+===============================*/
+
+
+
+
+
+
+/*
+* HEADER AND NAVIGATION
+======================================================= */
+.wrap-header {
+  background-image: url(/images/beach.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+
+.logo {
+  margin: 0.5em;
+  margin-top: 1em;
+  margin-left: 1em;
+  float: left;
+  width: 15%;
+  min-width: 4rem;
+  max-width: 5rem;
+}
+.main-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 100%;
+  overflow: hidden;
+  transition: all ease-in-out 200ms;
+
+
+}
+
+.main-nav.is-open {
+  left: 0;
+  transition: all ease-in-out 200ms;
+  position: fixed;
+
+
+}
+
+.nav-toggle {
+  display: block;
+  padding: 1em;
+  position: absolute;
+  right: 0.5em;
+  top: 0.7em;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.nav-toggle.fixed {
+  position: fixed;
+
+
+
+}
+
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  display: block;
+  width: 1.5em;
+  height: 3px;
+  background: white;
+  border-radius: 15px;
+  transform: none;
+
+}
+
+.hamburger.is-open {
+  transform: rotate(45deg);
+  transition: transform(all ease-in-out 200ms);
+
+}
+
+.hamburger.is-open::after {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  transition: all ease-in-out 200ms;
+}
+.hamburger.is-open::before {
+  display: none;
+}
+
+
+.hamburger::before {
+  -webkit-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  -webkit-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  transform: translateY(3px);
+}
+
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
+
+
+}
+
+.main-nav ul li {
+  display: flex;
+  flex: 1 1 auto;
+  border-bottom: 1px solid rgba(0,0,0, .25);
+  font-size: 1.5rem;
+
+
+}
+
+.main-nav ul li a {
+  text-decoration: none;
+  flex-basis: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-nav ul li a:hover {
+  background: rgba(0, 0, 0, .10);
+
+}
+
+@media screen and (min-width: 760px){
+  .main-nav {
+    position: absolute;
+    left: 0;
+    top: 8em;
+    background: none;
+    border: none;
+
+  }
+  .nav-toggle
+  .hamburger {
+    display: none;
+
+  }
+
+
+  .main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+  }
+  .main-nav ul li {
+    border: none;
+
+  }
+
+}
+
+/* FOOTER
+==================================================== */
+
+.footer {
+  background: #E2DF9E;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content;
+
+}
+
+.social {
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: row;
+  flex
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 1.5em;
+}
+
+.contact {
+  grid-column: 1/-1;
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr 1fr;
+  grid-template-rows: auto;
+
+}
+.contact-icons {
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact-left {
+  grid-column: 1/3;
+  padding-left: 1em;
+
+}
+.footer-menu{
+  grid-column: 3/5;
+
+
+}
+.footer-menu li {
+  list-style: none;
+}

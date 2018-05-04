@@ -1,0 +1,760 @@
+/* GLOBAL SETTINGS
+========================================================= */
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700,900");
+
+body{
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  background: #E5DEC0;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.grid-wrapper {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+
+}
+
+
+
+/* TYPOGRAPHY AND COLOURS
+==================================================== */
+.p-container {
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-top: 0;
+}
+@media screen and (min-width: 888px){
+  .p-container {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+}
+
+span {
+  font-weight: bold;
+}
+
+.paragraph-one h3 {
+  margin-bottom: 1em;
+}
+
+.bold {
+  font-weight: bold;
+  padding: 0, 1em;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.grid-wrapper {
+  background: #E2DF9E;
+}
+
+@media screen and (min-width: 888px){
+  .grid-wrapper {
+
+  }
+}
+
+.main-nav {
+  background: #44BFB9;
+}
+
+.main-nav ul li a {
+  color: #E2DF9E;
+}
+
+@media screen and (min-width: 762px) {
+  .main-nav ul li a {
+    color: rgb(226, 223, 158) ;
+    background: #44BFB9;
+  }
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li a:focus {
+  background: #44BFB9;
+  color: #E2DF9E;
+}
+.paragraph-one {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.paragraph-one h3 {
+  background: #44BFB9;
+  color: #E2DF9E;
+  position: relative;
+  display: inline-block;
+  padding-left: 1em;
+  padding-right: 1em;
+
+}
+.paragraph-two h3 {
+  background: #44BFB9;
+  color: #E2DF9E;
+  position: relative;
+  display: inline-block;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.slider {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* STYLING FOR THE ROOMS */
+.rooms h3 {
+  font-weight: 600;
+}
+
+.cheap-hotel h3 {
+  background:      #E2DF9E;
+  color: #44BFB9;
+
+}
+
+.cheap-hotel-info {
+  border: 1px solid #44BFB9;
+
+  border-radius: 15px;
+}
+.cheap-hotel-info h4 {
+  color:  #44BFB9;
+  background:     #E2DF9E;
+
+}
+
+.lux-hotel h3 {
+  background:      #E2DF9E;
+  color: #44BFB9;
+}
+.lux-hotel-info {
+  border: 1px solid #44BFB9;
+  background: #44BFB9;
+  border-radius: 15px;
+}
+
+.lux-hotel-info h4 {
+  background: #44BFB9;
+  color:      #E2DF9E;
+}
+
+.apartment h3 {
+  background:      #E2DF9E;
+  color: #44BFB9;
+}
+
+.apartment-info {
+  border: 1px solid #44BFB9;
+  border-radius: 15px;
+}
+
+.apartment-info h4 {
+  background: #44BFB9;
+  color:      #E2DF9E;
+}
+@media screen and (min-width: 888px) {
+  .cheap-hotel h3 {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  .lux-hotel h3 {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  .apartment h3 {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+
+
+}
+.order {
+  background: #44BFB9;
+  color:      #E2DF9E;
+  outline: 1px solid #E2DF9E;
+}
+
+
+.order-button {
+  color: #E2DF9E;
+}
+.order-button:hover ,
+.order-button:focus {
+  background: #44BFB9;
+  color: #E2DF9E;
+}
+
+/* GRID WRAPPER SETTINGS
+======================================================= */
+.grid-wrapper {
+  display: grid;
+  grid-template:
+  "header" 25vh
+  "paragraph-one" min-content
+  "slider" min-content
+  "paragraph-two" min-content
+  "cheap-hotel" minmax(250px, auto)
+  "lux-hotel" minmax(250px, auto)
+  "apartment" minmax(250px, auto)
+  "order" 10em
+  "map" auto
+  "paragraph-three" auto
+  "weather" min-content
+  "paragraph-four" min-content
+  "footer" auto
+  "cheap-hotel-info" auto
+  /1fr;
+}
+
+@media screen and (min-width: 888px){
+  .grid-wrapper {
+    display: grid;
+    grid-row-gap: 0.5em;
+    grid-template:
+    "header header header" 25vh
+    "paragraph-one paragraph-one paragraph-one" 30vh
+    "slider slider slider" 600px
+    "paragraph-two paragraph-two paragraph-two" min-content
+    "cheap-hotel cheap-hotel cheap-hotel-info" 20vh
+    "lux-hotel-info lux-hotel lux-hotel" 20vh
+    "apartment apartment apartment-info" minmax(250px, auto)
+    "order order order" minmax(150px, auto)
+    "paragraph-three . paragraph-four" auto
+    "map map map" min-content
+    ". . ." min-content
+    "footer footer footer" auto
+    /1fr 100px 1fr;
+  }
+  .weather {
+    display: none;
+  }
+}
+
+
+.wrap-header {
+  grid-area: header;
+}
+
+.main-nav {
+  z-index: 10;
+}
+.paragraph-one {
+  grid-area: paragraph-one;
+}
+
+.slider {
+  grid-area: slider;
+}
+
+.paragraph-two {
+  grid-area: paragraph-two;
+
+}
+.cheap-hotel {
+  grid-area: cheap-hotel;
+}
+.lux-hotel {
+  grid-area: lux-hotel;
+}
+.apartment {
+  grid-area: apartment;
+}
+.apartment-info {
+  grid-area: apartment-info;
+  position: relative;
+}
+
+.lux-hotel-info {
+  grid-area: lux-hotel-info;
+}
+.cheap-hotel-info {
+  display: cheap-hotel-info;
+}
+
+@media screen and (max-width: 888px) {
+  .apartment-info {
+    display: none;
+  }
+  .lux-hotel-info {
+    display: none;
+  }
+  .cheap-hotel-info {
+    display: none;
+  }
+}
+
+.order {
+  grid-area: order;
+}
+
+.map-container {
+  grid-area: map;
+}
+
+.paragraph-three {
+  grid-area: paragraph-three;
+}
+
+.weather {
+  grid-area: weather;
+}
+
+.paragraph-four{
+  grid-area: paragraph-four;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+
+/* HEADER AND NAVIGATION
+======================================================= */
+.wrap-header {
+  background-image: url(/images/barcelona/barcelona.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+
+
+}
+
+.logo {
+  margin: 0.5em;
+  margin-top: 1em;
+  margin-left: 1em;
+  float: left;
+  width: 15%;
+  min-width: 4rem;
+  max-width: 5rem;
+}
+.main-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 100%;
+  overflow: hidden;
+  transition: all ease-in-out 200ms;
+
+
+}
+
+.main-nav.is-open {
+  left: 0;
+  transition: all ease-in-out 200ms;
+
+}
+
+.nav-toggle {
+  display: block;
+  padding: 1em;
+  position: absolute;
+  right: 0.5em;
+  top: 0.7em;
+  cursor: pointer;
+  z-index: 10;
+
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  display: block;
+  width: 1.5em;
+  height: 3px;
+  background: white;
+  border-radius: 15px;
+  transform: none;
+
+}
+
+.hamburger.is-open {
+  transform: rotate(45deg);
+  transition: transform(all ease-in-out 200ms);
+
+}
+
+.hamburger.is-open::after {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  transition: all ease-in-out 200ms;
+}
+.hamburger.is-open::before {
+  display: none;
+}
+
+
+.hamburger::before {
+  -webkit-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  -webkit-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  transform: translateY(3px);
+}
+
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
+
+
+}
+
+.main-nav ul li {
+  display: flex;
+  flex: 1 1 auto;
+  border-bottom: 1px solid rgba(0,0,0, .25);
+
+}
+
+.main-nav ul li a {
+  text-decoration: none;
+  flex-basis: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+@media screen and (min-width: 758px){
+  .main-nav {
+    position: absolute;
+    left: 0;
+    top: 12em;
+    background: none;
+    border: none;
+
+  }
+  .nav-toggle
+  .hamburger {
+    display: none;
+
+  }
+
+
+  .main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+  }
+  .main-nav ul li {
+    border: none;
+
+  }
+
+}
+
+
+
+
+/* IMAGE SLIDER
+=========================================== */
+
+
+
+
+
+.slider {
+  overflow: hidden;
+  padding: 0;
+  margin-bottom: 0;
+
+
+
+
+}
+
+@media and screen (min-width: 725px){
+  .slider {
+    padding: 10em;
+    margin: 10em;
+
+  }
+}
+
+
+/* ROOMS AND APARTMENT
+==================================== */
+
+.rooms-header {
+  grid-area: title;
+  margin: 0;
+  padding-left: 0;
+  margin-left: 2em;
+  margin-right: 2em;
+  grid-column: 1/5;
+  grid-row: 1/-1;
+}
+
+.cheap-hotel {
+  padding: 1em;
+  padding-bottom: 0;
+  outline: 1px solid black;
+  outline-offset: -0.9em;
+  background-image: url(/images/barcelona/barcelona_cheap_hotel.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin-top: -2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+@media screen and (min-width: 888px) {
+  .cheap-hotel {
+    border-radius: 15px;
+  }
+  .lux-hotel {
+    border-radius: 15px;
+  }
+  .apartment {
+    border-radius: 15px;
+  }
+
+}
+
+.cheap-hotel-info {
+  padding: 1em;
+  padding-bottom: 0;
+  position: relative;
+  margin-top: -2em;
+  margin-left: 1em;
+
+  flex-direction:column;
+  align-items: center;
+  position: relative;
+
+}
+.cheap-hotel h3 {
+  position: absolute;
+  top: 80%;
+  left: 5%;
+}
+
+.lux-hotel {
+  padding: 1em;
+  padding-bottom: 0;
+  outline: 1px solid black;
+  outline-offset: -0.9em;
+  background-image: url(/images/barcelona/barcelona_lux_hotel.jpg);
+  background-position: bottom;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lux-hotel-info {
+  padding: 1em;
+  padding-bottom: 0;
+  position: relative;
+  margin-right: 1em;
+  flex-direction:column;
+  align-items: center;
+  position: relative;
+}
+
+.lux-hotel h3 {
+  position: absolute;
+  top: 75%;
+}
+
+.apartment {
+  padding: 1em;
+  padding-bottom: 0;
+  outline: 1px solid black;
+  outline-offset: -0.9em;
+  background-image: url(/images/barcelona/barcelona_apartment.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.apartment-info {
+  padding: 1em;
+  padding-bottom: 0;
+  position: relative;
+  margin-left: 1em;
+  flex-direction:column;
+  align-items: center;
+  position: relative;
+}
+
+
+.apartment h3 {
+  position: absolute;
+  top: 70%;
+
+
+}
+
+
+@media screen and (min-width: 888px) {
+  .cheap-hotel {
+    background-position: bottom;
+
+  }
+  .lux-hotel {
+    background-position: center;
+  }
+
+
+}
+/* ORDER SECTION
+=========================================  */
+
+.order {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  outline-offset: -0.9em;
+  position: relative;
+}
+
+@media screen and (min-width: 888px) {
+  .order {
+    outline: none;
+  }
+
+}
+
+.order-button {
+  font-size: 1.4rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-width: 2px;
+  border-style: solid;
+  padding: .4em 1.9em;
+  margin-bottom: 1em;
+  position: relative;
+  top: 5%;
+}
+
+
+
+/* GOOGLE MAP
+==================================== */
+
+.map iframe {
+  width: 100%;
+}
+
+.paragraph-three {
+  margin-top: 1em;
+  padding: 1em;
+}
+/* WEATHERMAP
+============================================= */
+.paragraph-four {
+  margin-top: 0;
+
+}
+
+/* VIDEO
+================================================ */
+
+/* FOOTER
+==================================================== */
+
+.footer {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 5em auto;
+  margin: 0;
+  margin-bottom: 0;
+}
+
+.social {
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: row;
+  flex
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 2em;
+}
+
+.social a {
+  text-decoration: none;
+  color: inherit;
+
+}
+
+.contact {
+  grid-column: 1/2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.fa-phone {
+  margin-right: 0.3em;
+  margin-top: 0.2em;
+}
+
+.mail {
+  display: flex;
+
+  align-items: center;
+  margin-top: 0;
+}
+
+.mail a {
+  text-decoration: none;
+  color: black;
+}
+
+.fa-envelope {
+  margin-right: 0.3em;
+  margin-left: 0.15em;
+
+}
