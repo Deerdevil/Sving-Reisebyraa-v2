@@ -568,7 +568,7 @@ span {
   padding-bottom: 0;
   outline: 1px solid black;
   outline-offset: -0.9em;
-  background-image: url(/image/barcelona/barcelona_lux_hotel.jpg);
+  background-image: url(../image/barcelona/barcelona_lux_hotel.jpg);
   background-position: bottom;
   background-size: cover;
   position: relative;
@@ -597,7 +597,7 @@ span {
   padding-bottom: 0;
   outline: 1px solid black;
   outline-offset: -0.9em;
-  background-image: url(/image/barcelona/barcelona_apartment.jpg);
+  background-image: url(../image/barcelona/barcelona_apartment.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
