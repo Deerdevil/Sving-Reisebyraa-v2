@@ -325,7 +325,7 @@ span {
 /* HEADER AND NAVIGATION
 ======================================================= */
 .wrap-header {
-  background-image: url(../barcelona/barcelona.jpg);
+  background-image: url(../image/barcelona/barcelona.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -521,7 +521,7 @@ span {
   padding-bottom: 0;
   outline: 1px solid black;
   outline-offset: -0.9em;
-  background-image: url(../images/barcelona/barcelona_cheap_hotel.jpg);
+  background-image: url(../image/barcelona/barcelona_cheap_hotel.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -568,7 +568,7 @@ span {
   padding-bottom: 0;
   outline: 1px solid black;
   outline-offset: -0.9em;
-  background-image: url(/images/barcelona/barcelona_lux_hotel.jpg);
+  background-image: url(/image/barcelona/barcelona_lux_hotel.jpg);
   background-position: bottom;
   background-size: cover;
   position: relative;
@@ -597,7 +597,7 @@ span {
   padding-bottom: 0;
   outline: 1px solid black;
   outline-offset: -0.9em;
-  background-image: url(/images/barcelona/barcelona_apartment.jpg);
+  background-image: url(/image/barcelona/barcelona_apartment.jpg);
   background-size: cover;
   background-position: center;
   display: flex;

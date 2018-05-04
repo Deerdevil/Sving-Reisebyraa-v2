@@ -196,7 +196,7 @@ img {
 /* HEADER AND NAVIGATION
 ======================================================= */
 .wrap-header {
-  background-image: url(/images/beach.jpg);
+  background-image: url(/image/beach.jpg);
   background-size: cover;
   position: relative;
 }
@@ -467,7 +467,7 @@ img {
   padding-bottom: 0;
   outline: 1px solid black;
   outline-offset: -0.9em;
-  background-image: url(/images/news/bike.jpg);
+  background-image: url(/image/news/bike.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -487,7 +487,7 @@ img {
   padding-bottom: 0;
   outline: 1px solid black;
   outline-offset: -0.9em;
-  background-image: url(/images/news/snowmobile.jpg);
+  background-image: url(/image/news/snowmobile.jpg);
   background-position: bottom;
   background-size: cover;
   position: relative;
@@ -506,7 +506,7 @@ img {
   padding-bottom: 0;
   outline: 1px solid black;
   outline-offset: -0.9em;
-  background-image: url(/images/news/elephant.jpg);
+  background-image: url(/image/news/elephant.jpg);
   background-size: cover;
   display: flex;
   justify-content: center;
