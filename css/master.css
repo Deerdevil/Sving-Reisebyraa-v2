@@ -92,7 +92,7 @@ img {
   grid-template:
   "header" 25vh
   "slider" min-content
-  "order" 10em
+  "order" 20vh
   "news-one" minmax(200px, auto)
   "news-two" minmax(200px, auto)
   "news-three" minmax(200px, auto)
@@ -467,8 +467,8 @@ img {
   padding-bottom: 0;
   outline: 1px solid black;
   outline-offset: -0.9em;
-  background-image: url(/image/news/bike.jpg);
-  background-position: center;
+  background-image: url(https://images.unsplash.com/photo-1512485081229-6766c3631d7e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=475bf75cb64f4daed1fa49dd62dd251f&auto=format&fit=crop&w=1508&q=80);
+  background-position: top;
   background-size: cover;
   position: relative;
   margin-top: -2em;
@@ -487,8 +487,8 @@ img {
   padding-bottom: 0;
   outline: 1px solid black;
   outline-offset: -0.9em;
-  background-image: url(/image/news/snowmobile.jpg);
-  background-position: bottom;
+  background-image: url(https://images.unsplash.com/photo-1503248739195-65669aaf5b0f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=af247d22850fd5c118a3d61ab1041cd7&auto=format&fit=crop&w=1210&q=80);
+  background-position: center;
   background-size: cover;
   position: relative;
   display: flex;
@@ -506,8 +506,9 @@ img {
   padding-bottom: 0;
   outline: 1px solid black;
   outline-offset: -0.9em;
-  background-image: url(/image/news/elephant.jpg);
+  background-image: url(https://images.unsplash.com/photo-1516296270211-f3ae5494e65d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8a351b38a01c626082226b8d1157cfd0&auto=format&fit=crop&w=1268&q=80);
   background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
