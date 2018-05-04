@@ -76,7 +76,7 @@ span {
 
 @media screen and (min-width: 762px) {
   .main-nav ul li a {
-    color: rgb(226, 223, 158) ;
+    color:      #E2DF9E;
     background: #44BFB9;
   }
 }
@@ -84,24 +84,26 @@ span {
 .main-nav ul li a:hover,
 .main-nav ul li a:focus {
   background: #44BFB9;
-  color: #E2DF9E;
+  color:      #E2DF9E;
 }
+
 .paragraph-one {
   padding-bottom: 0;
   margin-bottom: 0;
 }
+
 .paragraph-one h3 {
   background: #44BFB9;
-  color: #E2DF9E;
+  color:      #E2DF9E;
   position: relative;
   display: inline-block;
   padding-left: 1em;
   padding-right: 1em;
-
 }
+
 .paragraph-two h3 {
   background: #44BFB9;
-  color: #E2DF9E;
+  color:      #E2DF9E;
   position: relative;
   display: inline-block;
   padding-left: 1em;
@@ -119,29 +121,28 @@ span {
 }
 
 .cheap-hotel h3 {
-  background:      #E2DF9E;
-  color: #44BFB9;
+  background:  #E2DF9E;
+  color:       #44BFB9;
 
 }
 
 .cheap-hotel-info {
   border: 1px solid #44BFB9;
-
   border-radius: 15px;
 }
-.cheap-hotel-info h4 {
-  color:  #44BFB9;
-  background:     #E2DF9E;
 
+.cheap-hotel-info h4 {
+  color:      #44BFB9;
+  background: #E2DF9E;
 }
 
 .lux-hotel h3 {
-  background:      #E2DF9E;
-  color: #44BFB9;
+  background: #E2DF9E;
+  color:      #44BFB9;
 }
 .lux-hotel-info {
   border: 1px solid #44BFB9;
-  background: #44BFB9;
+  background:       #44BFB9;
   border-radius: 15px;
 }
 
@@ -151,8 +152,8 @@ span {
 }
 
 .apartment h3 {
-  background:      #E2DF9E;
-  color: #44BFB9;
+  background: #E2DF9E;
+  color:      #44BFB9;
 }
 
 .apartment-info {
@@ -194,7 +195,7 @@ span {
 .order-button:hover ,
 .order-button:focus {
   background: #44BFB9;
-  color: #E2DF9E;
+  color:      #E2DF9E;
 }
 
 /* GRID WRAPPER SETTINGS
@@ -324,7 +325,7 @@ span {
 /* HEADER AND NAVIGATION
 ======================================================= */
 .wrap-header {
-  background-image: url(/images/barcelona/barcelona.jpg);
+  background-image: url(../images/barcelona/barcelona.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -520,7 +521,7 @@ span {
   padding-bottom: 0;
   outline: 1px solid black;
   outline-offset: -0.9em;
-  background-image: url(/images/barcelona/barcelona_cheap_hotel.jpg);
+  background-image: url(../images/barcelona/barcelona_cheap_hotel.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
